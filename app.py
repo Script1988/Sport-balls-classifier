@@ -8,7 +8,7 @@ app = Flask(__name__)
 STATIC_FOLDER = "static"
 UPLOAD_FOLDER = "static/uploads/"
 
-cnn_model = ""
+cnn_model = tf.keras.models.load_model(STATIC_FOLDER + "/models/" + "!!!!!")  # TODO Write file name for the model
 
 
 @app.route('/')
