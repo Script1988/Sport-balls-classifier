@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Classification Result</title>
+</head>
+<body>
+  <h1>Classification Result</h1>
+
+  {% if label %}
+    <p>The image was classified as: {{ label }}</p>
+    <p>Probability: {{ probability }}</p>
+  {% else %}
+    <p>Classification failed. Please try again.</p>
+  {% endif %}
+
+  <a href="/">Back to Home</a>
+</body>
+</html>

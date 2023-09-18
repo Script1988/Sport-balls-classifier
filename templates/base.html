@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome</title>
+
+</head>
+<body>
+<h1>Upload your photo to get the prediction</h1>
+<h3>Service supports only files in "png", "jpeg" and "jpg" format</h3>
+<div>This service was created to make predictions on sport balls. Using machine learning model, we can define the next sport balls categories:
+  <ul>
+    <li>American football</li>
+    <li>Baseball</li>
+    <li>Basketball</li>
+    <li>Billiard</li>
+    <li>Bowling</li>
+    <li>Cricket</li>
+    <li>Football</li>
+    <li>Golf</li>
+    <li>Hockey Ball</li>
+    <li>Hockey puck</li>
+    <li>Rugby</li>
+    <li>Shuttlecock</li>
+    <li>Table tennis</li>
+    <li>Tennis</li>
+    <li>Volleyball</li>
+  </ul>
+</div>
+
+  <form action="/classify" method="post" enctype="multipart/form-data">
+    <label for="image">Upload an image from your device:</label>
+    <input type="file" name="image" id="image">
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
