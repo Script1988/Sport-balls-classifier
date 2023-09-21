@@ -4,6 +4,7 @@ import tensorflow as tf
 from werkzeug.utils import secure_filename
 from classifier import classify
 
+
 app = Flask(__name__)
 STATIC_FOLDER = "static"
 UPLOAD_FOLDER = "static/uploads/"
@@ -41,6 +42,7 @@ def classify_image():
 
         # Classify the uploaded image
         result, probability = classify(cnn_model, upload_image_file)
+        probability = probability[:5]
 
         # Check if the result is a tuple
         if isinstance(result, tuple) and len(result) > 0:
@@ -48,7 +50,6 @@ def classify_image():
         else:
             label = result
 
-        # If label is a tuple or list, convert it to a list
         if isinstance(label, tuple):
             label = list(label)
         return render_template("result.html", label=label, probability=probability)
