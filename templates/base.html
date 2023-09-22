@@ -8,42 +8,153 @@
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
   <style>
     body {
-      background-color: #C0C0C0;
+      background-color: #e8aa8d;
       font-family: Arial, sans-serif;
     }
+    .ball-image {
+      width: 150px;
+      height: 150px;
+      object-fit: cover; /* This property ensures the image maintains its aspect ratio */
+  }
   </style>
 </head>
 
-<body style="background-image: inherit">
+<body>
 <br>
-<h1 style="text-align: center">Upload your photo to get a ball prediction</h1>
-<br>
-<h3 style="margin-left: 10px">This service supports only files in "png", "jpeg" and "jpg" formats.</h3>
-<div style="margin-left: 10px; font-size: 20px">Welcome to our ball prediction service! We use advanced machine learning models to identify various sport ball categories, including:
+<h1 style="text-align: center; font-weight: bold">Upload your photo to get a ball prediction</h1>
+<h3 style="text-align: center">This service supports only files in "png", "jpeg" and "jpg" formats.</h3>
+<div style="text-align: center; font-size: 20px" class="bg">Welcome to our ball prediction service! We use advanced machine learning models to identify various sport ball categories, including:
   <hr>
-  <ul>
-    <li class="btn btn-success w-15">American football</li>
-    <li class="btn btn-success w-15">Baseball </li>
-    <li class="btn btn-success w-15">Basketball</li>
-    <li class="btn btn-success w-15">Billiard</li>
-    <li class="btn btn-success w-15">Bowling</li>
-    <li class="btn btn-success w-15">Cricket</li>
-    <li class="btn btn-success w-15">Football</li>
-    <li class="btn btn-success w-15">Golf</li>
-    <li class="btn btn-success w-15">Hockey Ball</li>
-    <li class="btn btn-success w-15">Hockey puck</li>
-    <li class="btn btn-success w-15">Rugby</li>
-    <li class="btn btn-success w-15">Shuttlecock</li>
-    <li class="btn btn-success w-15">Table tennis</li>
-    <li class="btn btn-success w-15">Tennis</li>
-    <li class="btn btn-success w-15">Volleyball</li>
-  </ul>
+
+<div class="row justify-content-center">
+  <div class="col-2">
+    <div class="d-flex flex-column align-items-center">
+      <img src="/static/balls/american_football.jpg" alt="American Football" class="ball-image">
+      <span class="btn btn-info btn-block">American football</span>
+    </div>
+  </div>
+
+  <div class="col-2">
+    <div class="d-flex flex-column align-items-center">
+      <img src="/static/balls/baseball.jpg" alt="Baseball" class="ball-image">
+      <span class="btn btn-info btn-block">Baseball</span>
+    </div>
+  </div>
+
+  <div class="col-2">
+    <div class="d-flex flex-column align-items-center">
+      <img src="/static/balls/basketball.png" alt="Basketball" class="ball-image">
+      <span class="btn btn-info btn-block">Basketball</span>
+    </div>
+  </div>
+
+  <div class="col-2">
+    <div class="d-flex flex-column align-items-center">
+      <img src="/static/balls/billiard.jpg" alt="Billiard" class="ball-image">
+      <span class="btn btn-info btn-block">Billiard</span>
+    </div>
+  </div>
+
+  <div class="col-2">
+    <div class="d-flex flex-column align-items-center">
+      <img src="/static/balls/bowling.jpg" alt="Bowling" class="ball-image">
+      <span class="btn btn-info btn-block">Bowling</span>
+    </div>
+  </div>
+
 </div>
+
+<hr>
+<div class="row justify-content-center">
+
+  <div class="col-2">
+    <div class="d-flex flex-column align-items-center">
+      <img src="/static/balls/cricket.jpg" alt="Cricket" class="ball-image">
+      <span class="btn btn-info btn-block">Cricket</span>
+    </div>
+  </div>
+
+  <div class="col-2">
+    <div class="d-flex flex-column align-items-center">
+      <img src="/static/balls/football.jpg" alt="Football" class="ball-image">
+      <span class="btn btn-info btn-block">Football</span>
+    </div>
+  </div>
+
+  <div class="col-2">
+    <div class="d-flex flex-column align-items-center">
+      <img src="/static/balls/golf.jpg" alt="Golf" class="ball-image">
+      <span class="btn btn-info btn-block">Golf</span>
+    </div>
+  </div>
+
+  <div class="col-2">
+    <div class="d-flex flex-column align-items-center">
+      <img src="/static/balls/hockey_ball.jpg" alt="Hockey Ball" class="ball-image">
+      <span class="btn btn-info btn-block">Hockey Ball</span>
+    </div>
+  </div>
+
+  <div class="col-2">
+    <div class="d-flex flex-column align-items-center">
+      <img src="/static/balls/hockey_puck.jpg" alt="Hockey puck" class="ball-image">
+      <span class="btn btn-info btn-block">Hockey puck</span>
+    </div>
+  </div>
+
+</div>
+
+<hr>
+
+  <div class="row justify-content-center">
+
+  <div class="col-2">
+    <div class="d-flex flex-column align-items-center">
+      <img src="/static/balls/rugby.jpg" alt="Rugby" class="ball-image">
+      <span class="btn btn-info btn-block">Rugby</span>
+    </div>
+  </div>
+
+  <div class="col-2">
+    <div class="d-flex flex-column align-items-center">
+      <img src="/static/balls/shuttlecock.jpg" alt="Shuttlecock" class="ball-image">
+      <span class="btn btn-info btn-block">Shuttlecock</span>
+    </div>
+  </div>
+
+  <div class="col-2">
+    <div class="d-flex flex-column align-items-center">
+      <img src="/static/balls/table_tennis.jpg" alt="Table tennis" class="ball-image">
+      <span class="btn btn-info btn-block">Table tennis</span>
+    </div>
+  </div>
+
+  <div class="col-2">
+    <div class="d-flex flex-column align-items-center">
+      <img src="/static/balls/tennis.jpg" alt="Tennis" class="ball-image">
+      <span class="btn btn-info btn-block">Tennis</span>
+    </div>
+  </div>
+
+  <div class="col-2">
+    <div class="d-flex flex-column align-items-center">
+      <img src="/static/balls/volleyball.jpg" alt="Volleyball" class="ball-image">
+      <span class="btn btn-info btn-block">Volleyball</span>
+    </div>
+  </div>
+
+</div>
+
+
+
+</div>
+
   <hr>
-  <form action="/classify" method="post" enctype="multipart/form-data">
-    <label for="image" style="margin-left: 10px; font-size: 20px">Upload an image from your device:</label>
+  <form style="text-align: center" action="/classify" method="post" enctype="multipart/form-data">
+    <label for="image" style="font-size: 20px">Upload an image from your device:</label>
     <input type="file" name="image" id="image">
-    <input type="submit" class="btn btn-primary" value="Get Prediction">
+    <input type="submit" class="btn btn-success" value="Get Prediction">
   </form>
+
 </body>
 </html>

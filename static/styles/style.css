@@ -1,11 +1,27 @@
-body {
-  background-image: url("../css_photos/sport.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  font-family: Arial, Helvetica, sans-serif;
 
-}
+
+
+
+/*.image {*/
+/*  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvyvn4JPZCnCZtnliTM9s9EaD6hjGTzSuaPg&usqp=CAU");*/
+
+/*  !* Full height *!*/
+/*  height: 100%;*/
+
+/*  !* Center and scale the image nicely *!*/
+/*  background-position: center;*/
+/*  background-repeat: no-repeat;*/
+/*  background-size: cover;*/
+/*}*/
+
+/*.jumbotron{*/
+/* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvyvn4JPZCnCZtnliTM9s9EaD6hjGTzSuaPg&usqp=CAU");*/
+/* background-attachment: fixed;*/
+/* background-position: center;*/
+/* background-repeat: no-repeat;*/
+/* background-size: cover;*/
+/*}*/
+
 
 /*body {*/
 /*      background-image: url("../css_photos/sport.jpg");*/
