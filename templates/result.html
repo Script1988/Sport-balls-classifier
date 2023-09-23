@@ -8,7 +8,7 @@
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
   <style>
     body {
-      background-color: #C0C0C0;
+      background-color: #e8aa8d;
       font-family: Arial, sans-serif;
     }
   </style>
@@ -17,13 +17,15 @@
   <br>
   <h1 style="text-align: center">Ball classification result</h1>
   <hr>
+  <div style="text-align: center">
   {% if label %}
     <p class="btn btn-success w-15" style="margin-left: 20px; font-size: 20px">The image was classified as: {{ label }}</p>
-    <p style="margin-left: 20px; font-size: 20px">Probability: {{ probability }}</p>
+    <p style="margin-left: 20px; font-size: 20px;">Probability: {{ probability }}</p>
   {% else %}
     <p style="margin-left: 10px; font-size: 20px">Classification failed. Please try again.</p>
   {% endif %}
   <hr>
-  <a href="/" class="btn btn-danger w-15" style="margin-left: 20px; font-size: 20px">Make another prediction</a>
+  <a href="/" class="btn btn-danger w-15" style="font-size: 20px">Make another prediction</a>
+  </div>
 </body>
 </html>
