@@ -9,6 +9,9 @@ app = Flask(__name__)
 STATIC_FOLDER = "static"
 UPLOAD_FOLDER = "static/uploads/"
 
+if not os.path.exists(UPLOAD_FOLDER):
+   os.makedirs(UPLOAD_FOLDER)
+
 # Define allowed file extensions
 ALLOWED_EXTENSIONS = {"png", "jpg", "jpeg"}
 
