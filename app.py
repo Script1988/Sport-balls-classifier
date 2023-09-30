@@ -53,6 +53,10 @@ def classify_image():
         else:
             label = result
 
+        if float(probability) <= 49.99:
+            probability = "The image was not classified as a sport ball"
+            label = "Other"
+
         if isinstance(label, tuple):
             label = list(label)
         return render_template("result.html", label=label, probability=probability)
