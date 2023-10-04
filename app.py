@@ -53,7 +53,7 @@ def classify_image():
         else:
             label = result
 
-        if float(probability) <= 49.99:
+        if float(probability) <= 61.99:
             probability = "The image was not classified as a sport ball"
             label = "Other"
 
