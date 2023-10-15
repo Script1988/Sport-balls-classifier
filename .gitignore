@@ -4,5 +4,5 @@
 **__pycache__/
 *.iml
 test.py
-/static/models/sport_balls_model.h5
+/static/models/sport_balls_mode_v2l.h5
 *.h5

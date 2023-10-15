@@ -15,7 +15,7 @@ if not os.path.exists(UPLOAD_FOLDER):
 # Define allowed file extensions
 ALLOWED_EXTENSIONS = {"png", "jpg", "jpeg"}
 
-cnn_model = tf.keras.models.load_model(os.path.join(STATIC_FOLDER, "models", "sport_balls_model.h5"))
+cnn_model = tf.keras.models.load_model(os.path.join(STATIC_FOLDER, "models", "sport_balls_mode_v2l.h5"))
 
 # Function to check if the file extension is allowed
 def allowed_file(filename):
@@ -46,6 +46,7 @@ def classify_image():
         # Classify the uploaded image
         result, probability = classify(cnn_model, upload_image_file)
         probability = probability[:5]
+        other = ["Apple", "Banana", "Car", "Cat", "Cherry", "Dog", "Human", "Kiwi", "Orange", "Strawberry"]
 
         # Check if the result is a tuple
         if isinstance(result, tuple) and len(result) > 0:
@@ -53,7 +54,7 @@ def classify_image():
         else:
             label = result
 
-        if float(probability) <= 61.99:
+        if float(probability) <= 49.99 or label in other:
             probability = "The image was not classified as a sport ball"
             label = "Other"
 

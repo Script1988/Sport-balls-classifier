@@ -29,9 +29,9 @@ def classify(model, image_path: str):
     predicted_class_index = score.index(max(score))
 
     class_labels = [
-        "American football", "Baseball", "Basketball", "Billiard", "Bowling",
-        "Cricket", "Football", "Golf", "Hockey ball", "Hockey puck", "Rugby",
-        "Shuttlecock", "Table tennis", "Tennis", "Volleyball",
+        "American football", "Apple", "Banana", "Baseball", "Basketball", "Billiard", "Bowling",
+        "Car", "Cat", "Cherry", "Cricket", "Dog", "Football", "Golf", "Hockey ball", "Hockey puck", "Human",
+        "Kiwi", "Orange", "Rugby", "Shuttlecock", "Strawberry", "Table tennis", "Tennis", "Volleyball",
     ]
     predicted_class = class_labels[predicted_class_index]
 
